@@ -4,15 +4,14 @@ import CalendarContainer from './components/CalendarContainer';
 
 
 const App = () => {
-  const [values, setValue] = useState({date: new Date(), bidnessDays: 0})
-
+  const [date, setDate] = useState(new Date().toString())
 
   return (
     <div className="App">
       <header className="App-header">
       </header>
-      <CalendarContainer date={values.date} />
-      <h1>{values.date}</h1>
+      <CalendarContainer date={date} setDate={setDate} />
+      <h1> {date}</h1>
     </div>
   );
 }
