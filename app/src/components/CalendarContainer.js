@@ -1,17 +1,18 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Calendar from "react-calendar"
 import 'react-calendar/dist/Calendar.css'
 
 const CalendarContainer = (props) => {
+    let {date, setDate} = props
 
     const changeDate = (nextDate) => {
-        props.setDate(nextDate.toString())
+        setDate(nextDate.toString())
     }
 
     return (
         <Calendar
             onChange={changeDate}
-            value={new Date(props.date)}
+            value={new Date(date)}
         />
     );
 }
