@@ -14,7 +14,7 @@ const DayButtonsContainer = (props) => {
             let y = ""+x
             return <button 
                 value={y}
-                key={y} 
+                key={""+y} 
                 onClick={handleClick}
                 >{y}</button>
     })
