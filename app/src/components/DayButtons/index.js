@@ -1,4 +1,5 @@
 import React from 'react'
+import StyledButton from "./style"
 
 const DayButtonsContainer = (props) => {
     let {setDays} = props
@@ -12,11 +13,11 @@ const DayButtonsContainer = (props) => {
 
     const generateButtons = () => buttonValues.map(x=> {
             let y = ""+x
-            return <button 
+            return <StyledButton 
                 value={y}
                 key={""+y} 
                 onClick={handleClick}
-                >{y}</button>
+                >{y}</StyledButton>
     })
 
     return (
