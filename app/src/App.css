@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 .App {
   text-align: center;
+ 
 }
 
 .App-logo {
@@ -33,4 +36,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+section {
+  display: flex;
+  flex-direction: row;;
+  justify-content: space-evenly;
 }

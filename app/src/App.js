@@ -3,7 +3,7 @@ import './App.css';
 import CalendarContainer from './components/CalendarContainer';
 import DateDisplay from "./components/DateDisplay";
 import DayButtons from './components/DayButtons/index';
-import NextBiznisDayDisplay from './components/NextBiznisDayDisplay';
+import NextBiznisDayDisplay from './components/NextBiznisDay';
 
 const App = () => {
   const [date, setDate] = useState(new Date().toString())
