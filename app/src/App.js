@@ -20,7 +20,9 @@ const App = () => {
   }
 
   const showmedates = () => {
-    
+    return <div>
+      {holidays.toString()}
+    </div>
   }
 
   return (
@@ -37,9 +39,9 @@ const App = () => {
         </div>
         <div id="biznis-day-section">
           <DateDisplay date={date} />
-          {showDisplay()}
         </div>
       </section>
+      {holidays.toString()}
       <section>
       </section>
       <section>
