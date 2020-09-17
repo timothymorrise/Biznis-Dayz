@@ -1,7 +1,14 @@
 import React from 'react'
 import moment from 'moment-business-days'
+import { holidays } from "./holidays"
+
+moment.updateLocale('us', {
+    holidays: [...holidays],
+    holidayFormat: 'MM-DD-YYYY'
+ });
 
 const NextBiznisDayDisplay = (props) => {
+    console.log(holidays)
     let {days, date} = props
 
     const nextBiznessDay = moment(date).businessAdd(days)._d

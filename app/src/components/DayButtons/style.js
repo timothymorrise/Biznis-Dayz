@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-    background-color: #660199;
+    background-color: ${props => props.days === props.value "#660199" : "#660199" };
     border: 0;
     font-family: font-family: 'Roboto', sans-serif;
     font-size: 2em;

@@ -4,7 +4,6 @@ import CalendarContainer from './components/CalendarContainer';
 import DateDisplay from "./components/DateDisplay";
 import DayButtons from './components/DayButtons';
 import NextBiznisDayDisplay from './components/NextBiznisDay';
-import holidays from "./components/NextBiznisDay/holidays"
 
 const App = () => {
   const [date, setDate] = useState(new Date().toString())
@@ -17,12 +16,6 @@ const App = () => {
         <NextBiznisDayDisplay date={date} days={days} />
       </div>
     }
-  }
-
-  const showmedates = () => {
-    return <div>
-      {holidays.toString()}
-    </div>
   }
 
   return (
@@ -39,13 +32,10 @@ const App = () => {
         </div>
         <div id="biznis-day-section">
           <DateDisplay date={date} />
+          {showDisplay()}
         </div>
       </section>
-      {holidays.toString()}
       <section>
-      </section>
-      <section>
-
       </section>
       <footer>
 
