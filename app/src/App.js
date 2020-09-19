@@ -28,7 +28,7 @@ const App = () => {
           <CalendarContainer date={date} setDate={setDate} />
         </div>
         <div id="buttons-section">
-          <DayButtons setDays={setDays} />
+          <DayButtons setDays={setDays} days={days} />
         </div>
         <div id="biznis-day-section">
           <DateDisplay date={date} />

@@ -2,10 +2,11 @@ import React from 'react'
 import StyledButton from "./style"
 
 const DayButtonsContainer = (props) => {
-    let {setDays} = props
+    let {setDays, days} = props
 
     const handleClick = (e) => {
         e.preventDefault()
+        console.log("props", e.target)
         setDays(+e.target.value)
     }
 
@@ -14,6 +15,7 @@ const DayButtonsContainer = (props) => {
     const generateButtons = () => buttonValues.map(x=> {
             let y = ""+x
             return <StyledButton 
+                days={days}
                 value={y}
                 key={""+y} 
                 onClick={handleClick}
