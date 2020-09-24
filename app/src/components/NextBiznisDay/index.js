@@ -8,7 +8,6 @@ moment.updateLocale('us', {
  });
 
 const NextBiznisDayDisplay = (props) => {
-    console.log(holidays)
     let {days, date} = props
 
     const nextBiznessDay = moment(date).businessAdd(days)._d

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import StyledButton from "./style"
 
 const DayButtonsContainer = (props) => {
@@ -6,25 +6,26 @@ const DayButtonsContainer = (props) => {
 
     const handleClick = (e) => {
         e.preventDefault()
-        console.log("props", e.target)
         setDays(+e.target.value)
     }
 
     const buttonValues = [2,3,4,5,6,9,10,20]
 
-    const generateButtons = () => buttonValues.map(x=> {
+    const generateButtons = (currentDay) => buttonValues.map(x=> {
             let y = ""+x
             return <StyledButton 
-                days={days}
-                value={y}
-                key={""+y} 
+                currentDay={currentDay} 
+                value={y} 
+                key={""+y}  
                 onClick={handleClick}
                 >{y}</StyledButton>
     })
 
+    useEffect(()=> )
+
     return (
         <div>
-            {generateButtons()}
+            {generateButtons(days)}
         </div>
         
     )

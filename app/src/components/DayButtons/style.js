@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-    background-color: ${props => props.days === props.value ? "#660199" : "#660199" };
+    background-color: ${props => props.currentDay === props.value ? "red" : "yellow" };
     border: 0;
     font-family: font-family: 'Roboto', sans-serif;
     font-size: 2em;
@@ -19,5 +19,8 @@ const StyledButton = styled.button`
         box-shadow: 2px 2px 3px #660199;
     }
 `;
+
+// "#660199"
+// "#660199"
 // ae75ca
 export default StyledButton
