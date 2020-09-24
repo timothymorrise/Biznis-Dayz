@@ -2,15 +2,16 @@ import React from 'react'
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-    background-color: ${props => props.currentDay === props.value ? "red" : "yellow" };
-    border: 0;
+    background-color: ${props => props.days === props.value ? "#ae75ca" : "#660199" };
+    border: ${props => props.days === props.value ? "3px solid #660199" : "0" };
     font-family: font-family: 'Roboto', sans-serif;
     font-size: 2em;
     color: white;
     height: 70px;
-    width: 70px;
     margin: 5px;
+    outline: none;
     transition-duration: 0.25s;
+    width: 70px;
      -webkit-transition-duration: 0.25s;
     -moz-transition-duration: 0.25s;
     &:hover {
@@ -20,7 +21,4 @@ const StyledButton = styled.button`
     }
 `;
 
-// "#660199"
-// "#660199"
-// ae75ca
 export default StyledButton

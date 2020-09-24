@@ -1,0 +1,8 @@
+#day-button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 200px;
+    justify-content: space-between;
+    width: 350px;
+}

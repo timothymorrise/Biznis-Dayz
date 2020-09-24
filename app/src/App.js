@@ -7,7 +7,7 @@ import NextBiznisDayDisplay from './components/NextBiznisDay';
 
 const App = () => {
   const [date, setDate] = useState(new Date().toString())
-  const [days, setDays] = useState(null)
+  const [days, setDays] = useState(5)
 
   const showDisplay = () => {
     if (days) {
