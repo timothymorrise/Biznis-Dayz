@@ -4,6 +4,7 @@ import CalendarContainer from './components/CalendarContainer';
 import DateDisplay from "./components/DateDisplay";
 import DayButtons from './components/DayButtons';
 import NextBiznisDayDisplay from './components/NextBiznisDay';
+import TimesContainer from './components/TimesContainer';
 
 const App = () => {
   const [date, setDate] = useState(new Date().toString())
@@ -36,6 +37,7 @@ const App = () => {
         </div>
       </section>
       <section>
+        <TimesContainer /> 
       </section>
       <footer>
 
