@@ -7,8 +7,7 @@ const StyledButton = styled.button`
     font-family: font-family: 'Roboto', sans-serif;
     font-size: 2em;
     color: white;
-    height: 70px;
-    margin: 5px;
+    
     outline: none;
     transition-duration: 0.25s;
     width: 70px;
@@ -18,6 +17,10 @@ const StyledButton = styled.button`
         background-color: #ae75ca;
         border: 1px solid #660199;
         box-shadow: 2px 2px 3px #660199;
+    }
+    @media (min-width: 600px) {
+        height: 70px;
+        margin: 5px;
     }
 `;
 

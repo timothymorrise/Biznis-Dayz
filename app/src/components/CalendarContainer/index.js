@@ -10,10 +10,14 @@ const CalendarContainer = (props) => {
     }
 
     return (
+        <div>
         <Calendar
             onChange={changeDate}
             value={new Date(date)}
         />
+        
+        </div>
+        
     );
 }
 

@@ -1,8 +1,26 @@
 #day-button-container {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 200px;
-    justify-content: space-between;
     width: 350px;
 }
+
+@media screen and (min-width: 991px) {
+    /* start of large tablet styles */
+    
+  }
+    
+  @media screen and (min-width: 767px) {
+    /* start of medium tablet styles */
+    
+    }
+  
+  @media screen and (min-width: 600px) {
+    #day-button-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+  
+  }

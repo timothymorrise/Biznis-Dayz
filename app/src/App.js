@@ -8,7 +8,7 @@ import TimesContainer from './components/TimesContainer';
 
 const App = () => {
   const [date, setDate] = useState(new Date().toString())
-  const [days, setDays] = useState(5)
+  const [days, setDays] = useState(null)
 
   const showDisplay = () => {
     if (days) {

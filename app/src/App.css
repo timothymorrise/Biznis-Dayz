@@ -5,16 +5,19 @@
  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#calendar-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#button-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
+
 
 header {
   align-items: center;
@@ -42,6 +45,24 @@ header {
 
 section {
   display: flex;
-  flex-direction: row;;
+  flex-direction: column;
   justify-content: space-evenly;
+}
+
+@media screen and (min-width: 991px) {
+  /* start of large tablet styles */
+  
+}
+  
+@media screen and (min-width: 767px) {
+  /* start of medium tablet styles */
+  
+  }
+
+@media screen and (min-width: 600px) {
+    section {
+      flex-direction: row;
+      align-items: center;
+    }
+
 }
