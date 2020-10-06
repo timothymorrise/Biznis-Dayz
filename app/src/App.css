@@ -16,13 +16,15 @@
   }
 }
 
-.App-header {
+header {
+  align-items: center;
+  background-color: #660199;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: .8em;
+  margin-bottom: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {

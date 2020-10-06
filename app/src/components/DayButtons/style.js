@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledButton = styled.button`
     background-color: ${props => props.days === props.value ? "#ae75ca" : "#660199" };
-    border: ${props => props.days === props.value ? "3px solid #660199" : "0" };
+    border: ${props => props.days === props.value ? "2px solid #660199" : "0" };
     font-family: font-family: 'Roboto', sans-serif;
     font-size: 2em;
     color: white;

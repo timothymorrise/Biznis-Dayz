@@ -1,0 +1,10 @@
+#times-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.time-zone-card {
+    margin: 20px;
+}
