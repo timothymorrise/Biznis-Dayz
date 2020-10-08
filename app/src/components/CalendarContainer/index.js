@@ -1,5 +1,6 @@
 import React from 'react'
 import Calendar from "react-calendar"
+import TodayButton from "./TodayButton"
 import 'react-calendar/dist/Calendar.css'
 
 const CalendarContainer = (props) => {
@@ -15,7 +16,9 @@ const CalendarContainer = (props) => {
             onChange={changeDate}
             value={new Date(date)}
         />
-        
+        <TodayButton 
+            setDate={setDate}
+        />
         </div>
         
     );
