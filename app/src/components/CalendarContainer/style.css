@@ -1,0 +1,26 @@
+#today-button {
+    background-color: "#660199";
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color: white;
+    outline: none;
+    transition-duration: 0.25s;
+    width: 70px;
+     -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+   
+    
+}
+
+#today-button:hover {
+    background-color: #ae75ca;
+    border: 1px solid #660199;
+    box-shadow: 2px 2px 3px #660199;
+}
+
+ @media (min-width: 600px) {
+    #today-button {
+        height: 70px;
+        margin: 5px;
+    } 
+}
