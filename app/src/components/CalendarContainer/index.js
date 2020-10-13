@@ -1,6 +1,7 @@
 import React from 'react'
 import Calendar from "react-calendar"
 import TodayButton from "./TodayButton"
+import "./style.css"
 import 'react-calendar/dist/Calendar.css'
 
 const CalendarContainer = (props) => {
