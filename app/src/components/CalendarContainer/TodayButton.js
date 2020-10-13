@@ -13,7 +13,7 @@ const TodayButton = (props) => {
 
     return (
         <div>
-            <button onClick={handleClick}>
+            <button id="today-button" onClick={handleClick}>
                 TODAY
             </button>
         </div>

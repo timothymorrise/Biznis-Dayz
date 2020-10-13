@@ -5,12 +5,14 @@ const StyledButton = styled.button`
     background-color: ${props => props.days === props.value ? "#ae75ca" : "#660199" };
     border: ${props => props.days === props.value ? "2px solid #660199" : "0" };
     font-family: font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
     color: white;
-    
+    height:30px;
+    width: 200px;
     outline: none;
+    margin: 3px;
     transition-duration: 0.25s;
-    width: 70px;
+    
      -webkit-transition-duration: 0.25s;
     -moz-transition-duration: 0.25s;
     &:hover {
@@ -21,6 +23,8 @@ const StyledButton = styled.button`
     @media (min-width: 600px) {
         height: 70px;
         margin: 5px;
+        width: 70px;
+        font-size: 2em;
     }
 `;
 
