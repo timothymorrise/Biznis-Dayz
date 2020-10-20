@@ -12,12 +12,15 @@
   
 }
 
-#button-section {
+#buttons-section {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
+#display-section {
+  display: none;
+}
 
 header {
   align-items: center;
@@ -28,10 +31,6 @@ header {
   font-size: .8em;
   margin-bottom: 30px;
   justify-content: center;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -59,10 +58,25 @@ section {
   
   }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
+    
+    .mid-section {
+      width: 33.33%
+    }
+
     section {
       flex-direction: row;
       align-items: center;
     }
+
+    .top-section {
+        width: 33.33%;
+    }
+
+    #display-section {
+      display: flex;
+    }
+
+   
 
 }

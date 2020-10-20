@@ -13,8 +13,15 @@ const App = () => {
   const showDisplay = () => {
     if (days) {
       return <div>
-        <p>+ {days}</p>
         <NextBiznisDayDisplay date={date} days={days} />
+      </div>
+    }
+  }
+
+  const showDays = () => {
+    if (days) {
+      return <div>
+        <h1>+ {days} business days</h1>
       </div>
     }
   }
@@ -25,18 +32,26 @@ const App = () => {
         <h1>Biznis Days</h1>
       </header>
       <section>
-        <div id="calendar-section">
+        <div className="top-section">
+          <DateDisplay />
+        </div>
+        <div className="top-section">
+          {showDays()}
+        </div>
+        <div className="top-section"></div>
+      </section>
+      <section>
+        <div id="calendar-section" className="mid-section">
           <CalendarContainer date={date} setDate={setDate} />
         </div>
-        <div id="buttons-section">
+        <div id="buttons-section" className="mid-section">
           <DayButtons setDays={setDays} days={days} />
         </div>
-        <div id="biznis-day-section">
-          <DateDisplay date={date} />
+        <div id="display-section" className="mid-section" >
           {showDisplay()}
         </div>
       </section>
-      <section>
+      <section id="times-section">
         <TimesContainer /> 
       </section>
       <footer>

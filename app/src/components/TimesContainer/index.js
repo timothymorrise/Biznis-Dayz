@@ -13,7 +13,7 @@ const TimesContainer = () => {
                 <h1>PACIFIC TIME</h1>
                 <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
             </div>
-            <div className="time-zone-card" id="arizona">
+            <div className="time-zone-card" id="arizona-time">
                 <h1>ARIZONA TIME</h1>
                 <Clock format={'HH:mm:ss'} ticking={true} timezone={arizTimeZone} />
             </div>
