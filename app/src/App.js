@@ -5,6 +5,7 @@ import DateDisplay from "./components/DateDisplay";
 import DayButtons from './components/DayButtons';
 import NextBiznisDayDisplay from './components/NextBiznisDay';
 import TimesContainer from './components/TimesContainer';
+import Footer from './components/Footer'
 
 const App = () => {
   const [date, setDate] = useState(new Date().toString())
@@ -33,12 +34,14 @@ const App = () => {
       </header>
       <section>
         <div className="top-section">
-          <DateDisplay />
+          <DateDisplay date={date} />
         </div>
         <div className="top-section">
           {showDays()}
         </div>
-        <div className="top-section"></div>
+        <div className="top-section" id="top-display">
+          {showDisplay()}
+        </div>
       </section>
       <section>
         <div id="calendar-section" className="mid-section">
@@ -55,7 +58,7 @@ const App = () => {
         <TimesContainer /> 
       </section>
       <footer>
-
+          <Footer />
       </footer>
     </div>
   );

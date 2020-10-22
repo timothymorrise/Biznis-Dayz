@@ -1,6 +1,7 @@
 import React from 'react'
 import moment from 'moment-business-days'
 import { holidays } from "./holidays"
+import "./style.css"
 
 moment.updateLocale('us', {
     holidays: [...holidays],
@@ -16,7 +17,7 @@ const NextBiznisDayDisplay = (props) => {
 
     return (
         <div>
-            <h1>{dayDisplay}</h1>
+            <h1 id="h1-day-display">{dayDisplay}</h1>
         </div> 
     )
 }
