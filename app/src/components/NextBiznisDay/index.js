@@ -3,12 +3,12 @@ import moment from 'moment-business-days'
 import { holidays } from "./holidays"
 import "./style.css"
 
-moment.updateLocale('us', {
-    holidays: [...holidays],
-    holidayFormat: 'MM-DD-YYYY'
- });
-
 const NextBiznisDayDisplay = (props) => {
+    moment.updateLocale('us', {
+        holidays: [...holidays],
+        holidayFormat: 'MM-DD-YYYY'
+     });
+
     let {days, date} = props
 
     const nextBiznessDay = moment(date).businessAdd(days)._d

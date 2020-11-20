@@ -57,9 +57,9 @@ const App = () => {
       <section id="times-section">
         <TimesContainer /> 
       </section>
-      <footer>
+      {/* <footer>
           <Footer />
-      </footer>
+      </footer>  */}
     </div>
   );
 }

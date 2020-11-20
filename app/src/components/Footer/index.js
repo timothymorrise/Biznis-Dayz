@@ -21,7 +21,5 @@ const Footer = () => {
 
 export default Footer
 
-import React, { Component } from 'react'
-
 
 
